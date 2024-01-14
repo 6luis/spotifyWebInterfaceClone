@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - WebPlayer</title>
+  </head>
+  <body class="h-screen flex flex-col bg-black">
+    <div class="flex flex-1 p-2.5">
+      <div class="flex flex-col gap-3">
+        <aside class="w-96 bg-zinc-600/20 rounded-xl text-white p-6">
+          <nav class="space-y-8">
+            <a
+              class="flex items-center gap-7 text-x font-bold text-zinc-100"
+              href="#"
+              ><ion-icon size="large" name="home-sharp"></ion-icon>Home</a
+            >
+            <a
+              class="flex items-center gap-7 text-x font-bold text-zinc-100"
+              href="#"
+              ><ion-icon size="large" name="search-outline"></ion-icon>Search</a
+            >
+          </nav>
+        </aside>
+        <aside class="bg-zinc-600/20 rounded-xl text-white p-6">
+          <nav class="flex justify-center">
+            <a
+              href=""
+              class="flex items-center gap-2 text-base font-semibold text-zinc-400 hover:text-white"
+            >
+              <i data-lucide="Library"></i>
+              Your Library
+            </a>
+            <div class="flex items-center justify-end flex-1 gap-5">
+              <a
+                class="p-1 hover:bg-zinc-800/40 transition-colors rounded-full"
+                href="#"
+                ><i class="stroke-1" data-lucide="plus"></i
+              ></a>
+              <a
+                class="p-1 hover:bg-zinc-800/40 transition-colors rounded-full"
+                href="#"
+                ><i class="stroke-1" data-lucide="arrow-right"></i
+              ></a>
+            </div>
+          </nav>
+          <nav class="flex justify-between mt-8">
+            <a class="p-3 bg-white/10 rounded-3xl" href="#">Playlists</a>
+            <a class="p-3 bg-white/10 rounded-3xl" href="#">Artists</a>
+            <a class="p-3 bg-white/10 rounded-3xl" href="#">Albums</a>
+            <a class="p-3 bg-white/10 rounded-3xl" href="#">Podcasts</a>
+          </nav>
+        </aside>
+      </div>
+      <main class="flex-1 p-6">main</main>
+    </div>
+    <footer class="bg-white p-12 text-white">footer</footer>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
